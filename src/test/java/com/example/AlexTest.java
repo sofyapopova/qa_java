@@ -8,7 +8,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class AlexTest {
@@ -31,7 +31,7 @@ public class AlexTest {
     }
 
     @Test
-    public void getFriends() throws Exception {
+    public void getFriendsReturnsCorrectValue() throws Exception {
 
         final Alex alex = new Alex(feline);
 

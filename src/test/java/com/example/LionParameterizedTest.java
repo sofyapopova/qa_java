@@ -38,9 +38,11 @@ public class LionParameterizedTest {
 
     @Test
     public void doesHaveManeReturnsCorrectValue() throws Exception {
+
         final Lion lion = new Lion(feline, sex);
+
         final boolean actual = lion.doesHaveMane();
 
-        assertEquals("Неправильно устанавливается значение поля hasMane", expected, actual);
+        assertEquals("Неправильно устанавливается значение поля hasMane для пола " + sex, expected, actual);
     }
 }
