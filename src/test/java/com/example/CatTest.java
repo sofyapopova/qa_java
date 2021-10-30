@@ -21,7 +21,6 @@ public class CatTest {
         final Cat cat = new Cat(feline);
 
         final String expectedSound = "Мяу";
-
         final String actualSound = cat.getSound();
 
         assertEquals("Метод getSound возвращает неправильное значение", expectedSound, actualSound);
@@ -33,9 +32,9 @@ public class CatTest {
         final List<String> foodForCat = List.of("Животные", "Птицы", "Рыба");
         Mockito.when(feline.eatMeat()).thenReturn(foodForCat);
 
-        final List<String> expectedFood = foodForCat;
-
         final Cat cat = new Cat(feline);
+
+        final List<String> expectedFood = foodForCat;
         final List<String> actualFood = cat.getFood();
 
         assertEquals("Метод getFood возвращает еду не для кота", expectedFood, actualFood);

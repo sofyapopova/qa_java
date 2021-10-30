@@ -22,9 +22,9 @@ public class LionTest {
         final List<String> foodForLion = List.of("Животные", "Птицы", "Рыба");
         Mockito.when(feline.getFood("Хищник")).thenReturn(foodForLion);
 
-        final List<String> expectedFood = foodForLion;
-
         final Lion lion = new Lion(feline, "Самец");
+
+        final List<String> expectedFood = foodForLion;
         final List<String> actualFood = lion.getFood();
 
         assertEquals("Метод getFood возвращает еду не для льва", expectedFood, actualFood);
@@ -36,9 +36,9 @@ public class LionTest {
         final int lionKittensCount = 1;
         Mockito.when(feline.getKittens()).thenReturn(lionKittensCount);
 
-        final int expectedKittensCount = lionKittensCount;
-
         final Lion lion = new Lion(feline, "Самец");
+
+        final int expectedKittensCount = lionKittensCount;
         final int actualKittensCount = lion.getKittens();
 
         assertEquals("Метод getKittens возвращает неправильное количество котят", expectedKittensCount, actualKittensCount);
