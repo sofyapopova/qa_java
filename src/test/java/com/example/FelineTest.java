@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class FelineTest {
 
     @Test
-    public void eatMeat() throws Exception {
+    public void eatMeatReturnsMeatForFeline() throws Exception {
 
         final List<String> meatForFeline = List.of("Животные", "Птицы", "Рыба");
 
