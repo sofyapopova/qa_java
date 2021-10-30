@@ -12,10 +12,9 @@ public class LionExceptionTest {
     private Feline feline;
 
     @Test(expected = Exception.class)
-    public void lionConstructorThrowsExceptionWithIncorrectSexValue() throws Exception {
+    public void lionConstructorWithIncorrectSexValueThrowsException() throws Exception {
 
         final String incorrectSexValue = "Альфа-самец";
         final Lion lion = new Lion(feline, incorrectSexValue);
     }
-
 }

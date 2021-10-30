@@ -12,11 +12,11 @@ import static org.junit.Assert.assertEquals;
 @RunWith(Parameterized.class)
 public class LionParameterizedTest {
 
-    @Mock
-    private Feline feline;
-
     private final String sex;
     private final boolean expected;
+
+    @Mock
+    private Feline feline;
 
     @Before
     public void setUp() {
